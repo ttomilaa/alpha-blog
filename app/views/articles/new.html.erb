@@ -3,8 +3,8 @@
 <% if @article.errors.any? %>
 <h2>The following errors prevented to article getting created.</h2>
   <ul>
-    <% @article.errors.full_messages.each do |msg| %>
-    <li><% msg %></li>
+    <%= @article.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
     <% end %>
   </ul>
 <% end %>
